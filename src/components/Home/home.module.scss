@@ -1,0 +1,65 @@
+.home {
+  padding: 2rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: gray;
+  }
+
+  &__earth{
+    transition: transform 0.1s ease-in-out;
+  }
+
+  &__astronaut {
+    position: absolute;
+
+    transition: transform 0.3s ease-in-out;
+
+    &--small {
+      width: 1.5rem;
+    }
+
+    &--large {
+
+    }
+
+    &--animated {
+      position: absolute;
+      animation: float 3s infinite alternate ease-in-out;
+      right: 40%;
+      width: 15rem;
+
+      /* Media Query for screens wider than 1000px */
+      @media (width <= 400px) {
+        right: 5rem;
+      }
+
+
+    }
+
+
+  }
+}
+
+
+
+.waveAnimation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
