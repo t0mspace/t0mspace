@@ -8,6 +8,8 @@ import linux from "../../assets/images/skills/linux.svg";
 import java from "../../assets/images/skills/icons8-java.svg";
 import docker from "../../assets/images/skills/icons8-docker.svg";
 import spring from "../../assets/images/skills/icons8-spring.svg";
+import react from "../../assets/images/skills/react.svg";
+import python from "../../assets/images/skills/python.svg";
 
 function SkillsSection() {
     const skills = [
@@ -21,6 +23,8 @@ function SkillsSection() {
         { name: "Linux", src: linux },
         { name: "Docker", src: docker },
         { name: "Spring boot", src: spring },
+        { name: "React", src: react },
+        { name: "Python", src: python },
     ];
 
     return (
