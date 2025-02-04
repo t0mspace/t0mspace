@@ -14,14 +14,15 @@ const VerticalSlider = ({sections}) => {
     useWheel(scrollHandler);
 
     return (
-        <div className="flex flex-col items-center justify-center bg-gray-900 text-white">
+        <div className=" bg-gray-900 text-white flex flex-col">
             <AnimatePresence mode="wait">
                 <motion.div
                     animate={{translateY: -activeIndex * 100 + "vh"}}
                     transition={{type: "spring", stiffness: 100}}
-                    className="flex flex-col"
+                    className=""
                 >
                     {sections.map((Section, index) => (
+                        <section key={index} className="mb-16">
                         <section key={index} className="w-screen h-screen flex items-center justify-center">
                         <section key={index} className="w-screen h-screen flex justify-center">
                             <Section />

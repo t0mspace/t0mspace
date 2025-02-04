@@ -1,6 +1,10 @@
 .home {
   padding: 2rem;
 
+  &__presentation {
+    left: 50%;
+  }
+
   &__title {
     font-size: 2rem;
     font-weight: bold;
@@ -13,6 +17,11 @@
 
   &__earth{
     transition: transform 0.1s ease-in-out;
+
+    @media (width >= 1000px) {
+      right: 50rem;
+      top: 30rem;
+    }
   }
 
   &__astronaut {
@@ -31,7 +40,7 @@
     &--animated {
       position: absolute;
       animation: float 3s infinite alternate ease-in-out;
-      right: 40%;
+      right: 15%;
       width: 15rem;
 
       /* Media Query for screens wider than 1000px */

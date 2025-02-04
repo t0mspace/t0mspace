@@ -28,9 +28,18 @@ function SkillsSection() {
     ];
 
     return (
-        <div className="skills-section flex flex-col">
-            <h2 className="text-4xl mb-3">Skills</h2>
+        <div className="skills-section">
+          <h2 className="text-4xl mb-16 font-bold ml-8">Skills</h2>
+          <div className="flex align-center justify-center p-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {skills.map((skill, index) => (
+                  <div key={index} className="skill-item bg-gray-800 p-4 rounded-lg">
+                      <img src={skill.src} alt={skill.name} className="w-auto h-20" />
+                      <p className="text-center m-1">{skill.name}</p>
+                  </div>
+              ))}
+              </div>
+          </div>
             {skills.map((skill, index) => (
                 <div key={index} className="skill-item items-center justify-center bg-gray-800 p-4 rounded-lg">
                     <img src={skill.src} alt={skill.name} className="w-auto h-20" />
