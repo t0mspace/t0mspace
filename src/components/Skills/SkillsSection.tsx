@@ -19,8 +19,8 @@ function SkillsSection() {
         { name: "Angular", src: angular },
         { name: "Symfony", src: symfony },
         { name: "Linux", src: linux },
-        { name: "docker", src: docker },
-        { name: "spring", src: spring },
+        { name: "Docker", src: docker },
+        { name: "Spring boot", src: spring },
     ];
 
     return (
@@ -29,13 +29,15 @@ function SkillsSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {skills.map((skill, index) => (
                 <div key={index} className="skill-item items-center justify-center bg-gray-800 p-4 rounded-lg">
+                    <img src={skill.src} alt={skill.name} className="w-auto h-20" />
+                    <p className="text-center m-1">{skill.name}</p>
                     <img src={skill.src} alt={skill.name} className="w-20 h-auto" />
                 </div>
             ))}
             </div>
 
         </div>
-        
+
     )
 }
 

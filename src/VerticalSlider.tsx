@@ -23,6 +23,7 @@ const VerticalSlider = ({sections}) => {
                 >
                     {sections.map((Section, index) => (
                         <section key={index} className="w-screen h-screen flex items-center justify-center">
+                        <section key={index} className="w-screen h-screen flex justify-center">
                             <Section />
                         </section>
                     ))}
