@@ -1,5 +1,3 @@
-import React from "react";
-
 import VerticalSlider from "./VerticalSlider";
 import Header from "./components/Header/Header.tsx";
 import HomeSection from "./components/Home/HomeSection.tsx";

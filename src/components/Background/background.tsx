@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import {styles }from './background.module.scss';
 
 const starColors = [
     "text-yellow-300 dark:text-yellow-200",
@@ -7,7 +6,6 @@ const starColors = [
     "text-pink-300 dark:text-pink-200",
     "text-purple-300 dark:text-purple-200",
 ];
-
 
 const starShapes = ["•", "✦", "✧", "+", "×", "★", "✸"];
 

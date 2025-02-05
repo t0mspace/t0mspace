@@ -13,7 +13,7 @@ function ProjectsSection() {
       <h2 className="text-4xl mb-16 font-bold text-center">Projects</h2>
       <div className="flex">
 
-        {projectsData.map((project, index) => (
+        {projectsData.map((project) => (
           <div
             className="transform duration-300 rounded-2xl border border-slate-500/20 dark:border-slate-600/30 bg-slate-100/20 dark:bg-slate-600/20 hover:bg-slate-100/30 dark:hover:bg-slate-600/30 cursor-pointer p-4 sm:p-6 flex flex-col justify-between">
             <header>

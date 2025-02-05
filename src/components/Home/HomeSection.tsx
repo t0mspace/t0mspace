@@ -2,7 +2,6 @@ import astronaut from '../../assets/images/astronaut.svg';
 import earth from '../../assets/images/earth.svg';
 import arrow from '../../assets/images/arrow.svg';
 import styles from './home.module.scss';
-import { useEffect, useState } from "react";
 
 const data = {
     "greeting": "Hey there!",
@@ -12,14 +11,6 @@ const data = {
 }
 
 function HomeSection() {
-    const [offsetY, setOffsetY] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => setOffsetY(window.scrollY);
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
       <div className={`${styles["home"]} flex flex-col md:h-screen items-center justify-center mb-72`}>
         <div className="home__presentation">
