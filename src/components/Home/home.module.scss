@@ -1,13 +1,27 @@
 .home {
-  padding: 2rem;
+  //padding: 2rem;
+
+  @media (max-width: 450px) {  // Correct media query syntax
+    display: flex;
+    align-items: center; // Centers children vertically
+    justify-content: center; // Centers children horizontally (if needed)
+    height: 100vh; // Ensures full viewport height
+  }
 
   &__presentation {
     left: 50%;
+    @media (max-width: 450px) {  // Correct media query syntax
+      left: auto;
+    }
   }
 
   &__title {
     font-size: 2rem;
     font-weight: bold;
+
+    @media (width <= 450px) {
+      margin-top: 4rem;
+    }
   }
 
   &__subtitle {
@@ -16,15 +30,34 @@
   }
 
   &__earth{
+    z-index: 2;
     transition: transform 0.1s ease-in-out;
 
     @media (width >= 1000px) {
-      right: 50rem;
+      z-index: 2;
+      right: -60rem;
       top: 30rem;
     }
   }
 
+  &__arrow{
+    position: absolute;
+    rotate: -30deg;
+    top: 60%;
+    left: 50%;
+    width: 10%;
+    height: auto;
+
+    @media (min-width: 500px) and (max-width: 1000px) {
+      top: 70%;
+      left: 25%;
+      right: 5rem;
+      width: 15rem;
+    }
+  }
+
   &__astronaut {
+
     position: absolute;
 
     transition: transform 0.3s ease-in-out;
@@ -38,10 +71,16 @@
     }
 
     &--animated {
+      z-index: 2;
       position: absolute;
       animation: float 3s infinite alternate ease-in-out;
-      right: 15%;
+      right: 30%;
       width: 15rem;
+
+      @media (min-width: 500px) and (max-width: 1000px) {
+        right: 5rem;
+        width: 15rem;
+      }
 
       /* Media Query for screens wider than 1000px */
       @media (width <= 400px) {
