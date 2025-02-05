@@ -2,7 +2,8 @@ import html from "../../assets/images/skills/icons8-html.svg";
 import css from "../../assets/images/skills/icons8-css3.svg";
 import javascript from "../../assets/images/skills/icons8-javascript.svg";
 import angular from "../../assets/images/skills/angular.svg";
-import php from "../../assets/images/skills/icons8-php.svg";
+//import php from "../../assets/images/skills/icons8-php.svg";
+import php from "../../assets/images/skills/php_logo.svg";
 import symfony from "../../assets/images/skills/icons8-symfony.svg";
 import linux from "../../assets/images/skills/linux.svg";
 import java from "../../assets/images/skills/icons8-java.svg";
@@ -13,6 +14,7 @@ import python from "../../assets/images/skills/python.svg";
 import gitlab from "../../assets/images/skills/icons8-gitlab.svg";
 import git from "../../assets/images/skills/icons8-git.svg";
 import github from "../../assets/images/skills/icons8-github.svg";
+import sql from "../../assets/images/skills/icons8-sql.svg";
 
 function SkillsSection() {
     const skills = [
@@ -30,7 +32,7 @@ function SkillsSection() {
         { name: "Python", src: python },
         { name: "Gitlab", src: gitlab },
         { name: "Git", src: git },
-        { name: "Github", src: github },
+        { name: "SQL", src: sql },
     ];
 
     return (

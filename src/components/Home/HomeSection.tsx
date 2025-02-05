@@ -11,7 +11,6 @@ const data = {
     "subtitle": "& sometimes astronaut"
 }
 
-
 function HomeSection() {
     const [offsetY, setOffsetY] = useState(0);
 
@@ -41,7 +40,6 @@ function HomeSection() {
         <img src={earth} className={`${styles["home__earth"]} absolute -z-0 hidden lg:block size-4/5`} alt="" />
         <img src={astronaut} className={`${styles["home__astronaut--animated"]} hidden -z-0 md:block top-1/2 right-5 lg:bottom-1/2`} alt="" />
       </div>
-
     )
 }
 

@@ -1,6 +1,5 @@
 import linkedin from '../../assets/images/icons8-linkedin.svg'
 import github from '../../assets/images/icons8-github.svg'
-import { link } from 'framer-motion/client'
 
 function ContactSection() {
   const data = {

@@ -10,6 +10,7 @@
 
   &__presentation {
     left: 50%;
+    z-index: 20;
     @media (max-width: 450px) {  // Correct media query syntax
       left: auto;
     }
@@ -43,16 +44,27 @@
   &__arrow{
     position: absolute;
     rotate: -30deg;
-    top: 60%;
+    top: 74%;
     left: 50%;
-    width: 10%;
+    width: 8%;
     height: auto;
+    opacity: 80%;
+    z-index: 5;
 
     @media (min-width: 500px) and (max-width: 1000px) {
       top: 70%;
       left: 25%;
       right: 5rem;
       width: 15rem;
+    }
+
+    @media (min-width: 1000px) and (max-width: 1500px) {
+      top: 20%;
+      left: 50%;
+    }
+
+    @media (min-width: 1500px) and  (max-width: 4000px){
+      top: 55%;
     }
   }
 
@@ -74,12 +86,17 @@
       z-index: 2;
       position: absolute;
       animation: float 3s infinite alternate ease-in-out;
-      right: 30%;
+      right: 20%;
       width: 15rem;
 
       @media (min-width: 500px) and (max-width: 1000px) {
         right: 5rem;
         width: 15rem;
+        top: 55%;
+      }
+      @media (min-width: 1000px) {
+        top: 40%;
+        left: 65%;
       }
 
       /* Media Query for screens wider than 1000px */
