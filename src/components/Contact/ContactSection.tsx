@@ -24,9 +24,9 @@ function ContactSection() {
     }
   }
   return (
-    <div className="about-section">
-      <h2 className="text-4xl mb-16 font-bold ml-8">Contact</h2>
-      <div className="flex flex-col align-center justify-center p-8">
+    <div className="about-section max-w-3xl mx-auto">
+      <h2 className="text-4xl mb-16 font-bold text-center">Contact</h2>
+      <div className="text-left">
         <p className="text-gray-700 dark:text-gray-200 mb-6 transition-colors duration-200">Feel free to reach out to me
           via
           email or connect on social media!

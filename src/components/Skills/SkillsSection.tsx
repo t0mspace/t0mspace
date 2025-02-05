@@ -10,6 +10,9 @@ import docker from "../../assets/images/skills/icons8-docker.svg";
 import spring from "../../assets/images/skills/icons8-spring.svg";
 import react from "../../assets/images/skills/react.svg";
 import python from "../../assets/images/skills/python.svg";
+import gitlab from "../../assets/images/skills/icons8-gitlab.svg";
+import git from "../../assets/images/skills/icons8-git.svg";
+import github from "../../assets/images/skills/icons8-github.svg";
 
 function SkillsSection() {
     const skills = [
@@ -22,15 +25,18 @@ function SkillsSection() {
         { name: "Symfony", src: symfony },
         { name: "Linux", src: linux },
         { name: "Docker", src: docker },
-        { name: "Spring boot", src: spring },
+        { name: "Spring Boot", src: spring },
         { name: "React", src: react },
         { name: "Python", src: python },
+        { name: "Gitlab", src: gitlab },
+        { name: "Git", src: git },
+        { name: "Github", src: github },
     ];
 
     return (
-        <div className="skills-section">
-          <h2 className="text-4xl mb-16 font-bold ml-8">Skills</h2>
-          <div className="flex align-center justify-center p-8">
+        <div className="skills-section max-w-3xl mx-auto">
+          <h2 className="text-4xl mb-16 font-bold text-center">Skills</h2>
+          <div className="flex">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {skills.map((skill, index) => (
                   <div key={index} className="skill-item bg-gray-800 p-4 rounded-lg">
