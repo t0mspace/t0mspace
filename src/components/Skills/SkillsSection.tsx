@@ -39,10 +39,12 @@ function SkillsSection() {
           <div className="flex">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {skills.map((skill, index) => (
-                  <div key={index} className="skill-item bg-gray-800 p-4 rounded-lg">
-                      <img src={skill.src} alt={skill.name} className="w-auto h-20" />
+                <div className="bg-black/.9 backdrop-blur-xl">
+                  <div key={index} className="skill-item dark:bg-slate-700/30 p-4 rounded-lg">
+                      <img src={skill.src} alt={skill.name} className="w-auto h-20 mx-auto rounded-full" />
                       <p className="text-center m-1">{skill.name}</p>
                   </div>
+                </div>
               ))}
               </div>
           </div>
