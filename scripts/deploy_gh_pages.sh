@@ -70,7 +70,7 @@ if [ ! -d "dist" ]; then
 fi
 
 # Go back to project root
-cd ..
+#cd ..
 
 # Force add and commit the new build
 echo "📝 Committing the new build..."
