@@ -9,8 +9,8 @@ import ContactSection from "./components/Contact/ContactSection.tsx";
 function App() {
     const sections = [HomeSection, SkillsSection, ProjectsSection,AboutSection, ContactSection];
     return (
-        <div className="bg-cover h-screen bg-gray-900 text-white">
-            <div className="absolute inset-0 z-1">
+        <div className="bg-cover h-screen bg-gray-900 text-white -z-3">
+            <div className="absolute -z-3 inset-0">
                 <StarField starCount={150}/>
                 <Header/>
                 <VerticalSlider sections={sections}/>
