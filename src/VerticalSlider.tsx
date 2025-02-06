@@ -2,7 +2,7 @@ import './index.scss'
 
 const VerticalSlider = ({ sections }) => {
   return (
-    <div className="bg-gray-900 text-white flex flex-col h-screen overflow-y-scroll scroll-snap">
+    <div className="bg-gray-900 text-white flex flex-col min-h-screen overflow-y-scroll scroll-snap">
       {sections.map((Section, index) => (
         <section
           key={index}
