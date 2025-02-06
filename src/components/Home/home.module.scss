@@ -32,6 +32,7 @@
 
   &__earth{
     z-index: 2;
+    position: absolute;
     transition: transform 0.1s ease-in-out;
 
     @media (width >= 1000px) {

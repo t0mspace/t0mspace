@@ -12,7 +12,7 @@ const data = {
 
 function HomeSection() {
     return (
-      <div className={`${styles["home"]} flex flex-col md:h-screen items-center justify-center mb-72`}>
+      <div className={`${styles["home"]} relative flex flex-col md:h-screen items-center justify-center mb-72`}>
         <div className="home__presentation">
           <h2 className={styles["home__title"]}>👋  {data.greeting}</h2>
 

@@ -26,3 +26,14 @@ p{
 .external-link {
   @apply cursor-pointer text-yellow-100 underline underline-offset-2 transition duration-300 ease-in-out hover:bg-yellow-100 hover:no-underline hover:text-gray-900 px-2 py-1
 }
+
+/* Add this custom CSS for Firefox */
+.scroll-snap {
+  scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory; /* Firefox support */
+}
+
+.scroll-snap-child {
+  scroll-snap-align: start;
+  -webkit-scroll-snap-align: start; /* Firefox support */
+}
