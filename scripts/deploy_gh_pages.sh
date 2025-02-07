@@ -61,6 +61,7 @@ fi
 
 # Build the project
 echo "🔨 Building the project..."
+rm -rf dist
 npm run build
 
 # Check if build was successful
@@ -83,12 +84,7 @@ echo "📦 Publishing dist folder to gh-pages branch..."
 current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 # Push the subtree
-if git subtree push --prefix dist origin gh-pages; then
-    echo "✅ Successfully deployed to GitHub Pages!"
-else
-    echo "❌ Deployment failed. If you get a 'updates were rejected' error, try running:"
-    echo "git push origin `git subtree split --prefix dist $current_branch`:gh-pages --force"
-fi
+git subtree push --prefix dist origin gh-pages || git push origin `git subtree split --prefix dist $current_branch`:gh-pages --force
 
 # Push changes to remote
 echo "🔄 Pushing changes to remote..."
