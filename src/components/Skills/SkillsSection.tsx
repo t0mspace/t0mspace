@@ -35,7 +35,7 @@ function SkillsSection() {
     ];
 
     return (
-        <div className="skills-section max-w-3xl mx-auto">
+        <div id={"skills"} className="skills-section max-w-3xl mx-auto">
           <h2 className="text-4xl mb-16 font-bold text-center">Skills</h2>
           <div className="flex">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">

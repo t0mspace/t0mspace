@@ -1,6 +1,6 @@
 function AboutSection() {
   return (
-    <div className="about-section max-w-3xl mx-auto">
+    <div id={"about"} className="about-section max-w-3xl mx-auto">
       <h2 className="text-4xl mb-16 font-bold text-center">About</h2>
       <div className="bg-black/.9 backdrop-blur-xl">
       <div className="p-8 text-gray-200 bg-slate-100/100 dark:bg-slate-700/30 rounded-2xl text-lg font-medium leading-relaxed">

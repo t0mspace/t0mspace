@@ -9,7 +9,7 @@ function ProjectsSection() {
 
   ]
   return (
-    <div className="projects-section max-w-3xl mx-auto">
+    <div id={"projects"} className="projects-section max-w-3xl mx-auto">
       <h2 className="text-4xl mb-16 font-bold text-center">Projects</h2>
       <div className="flex">
 
