@@ -1,8 +1,0 @@
-@keyframes twinkle {
-  0% { opacity: 0.3; transform: scale(1); }
-  100% { opacity: 1; transform: scale(1.2); }
-}
-
-.twinkleStar {
-  animation: twinkle infinite alternate ease-in-out;
-}
