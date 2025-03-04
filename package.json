@@ -2,6 +2,7 @@
   "name": "tomspace",
   "private": true,
   "version": "1.0.0",
+  "base": "/t0mspace/",
   "type": "module",
   "scripts": {
     "dev": "vite",
