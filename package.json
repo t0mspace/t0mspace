@@ -5,8 +5,9 @@
   "type": "module",
   "homepage": "https://t0mspace.github.io/t0mspace/",
   "scripts": {
+    "add-domain": "echo 'tomspace.be' > ./dist/CNAME",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "deploy" : "npm run add-domain && gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint src",
