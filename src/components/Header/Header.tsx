@@ -1,5 +1,8 @@
 import './header.scss';
+import github from '../../assets/images/skills/icons8-github-24.svg';
+import linkedin from '../../assets/images/skills/icons8-linkedin-24.svg';
 import { useState } from 'react'
+
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -18,7 +21,7 @@ function Header() {
                   <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                 </div>
 
-                <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+                <div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
                   <div
                     className="absolute top-0 right-0 px-8 py-8"
                     onClick={() => setIsNavOpen(false)}
@@ -55,8 +58,30 @@ function Header() {
                     <li className="border-b border-gray-400 my-8 uppercase">
                       <a href="#contact">Contact</a>
                     </li>
+                    <li>
+                      <a
+                        href="https://github.com/your-username"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-menu__external-link"
+                      >
+                        <img className="h-5 w-5" src={github} alt="GitHub Logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="//www.linkedin.com/in/thomas-b-a0642642"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-menu__external-link"
+                      >
+                        <img className="h-5 w-5" src={linkedin} alt="Linkedin Logo" />
+                      </a>
+                    </li>
                   </ul>
+
                 </div>
+
               </section>
 
               <ul className="hidden space-x-8 lg:flex">
@@ -78,6 +103,27 @@ function Header() {
                 <li>
                   <a href="#contact">Contact</a>
                 </li>
+                <li>
+                  <a
+                    href="https://github.com/t0mspace"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav-menu__external-link"
+                  >
+                    <img className="h-5 w-5" src={github} alt="GitHub Logo" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="//www.linkedin.com/in/thomas-b-a0642642"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="nav-menu__external-link"
+                  >
+                    <img className="h-5 w-5" src={linkedin} alt="Linkedin Logo" />
+                  </a>
+                </li>
+
               </ul>
             </nav>
           </header>

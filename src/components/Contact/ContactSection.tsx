@@ -1,5 +1,5 @@
-import linkedin from '../../assets/images/icons8-linkedin.svg'
-import github from '../../assets/images/icons8-github.svg'
+import github from '../../assets/images/skills/icons8-github-24.svg';
+import linkedin from '../../assets/images/skills/icons8-linkedin-24.svg';
 
 function ContactSection() {
   const data = {
