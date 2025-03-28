@@ -41,7 +41,7 @@ function SkillsSection() {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {skills.map((skill, index) => (
                 <div className="bg-black/.9 backdrop-blur-xl">
-                  <div key={index} className="skill-item dark:bg-slate-700/30 p-4 rounded-lg">
+                  <div key={index} className="skill-item dark:bg-slate-700/30 bg-opacity-100 p-4 rounded-lg">
                       <img src={skill.src} alt={skill.name} className="w-auto h-20 mx-auto rounded-full" />
                       <p className="text-center m-1">{skill.name}</p>
                   </div>
