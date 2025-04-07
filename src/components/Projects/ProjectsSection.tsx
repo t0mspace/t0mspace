@@ -15,7 +15,7 @@ function ProjectsSection() {
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className="bg-black/.9 backdrop-blur-xl p-8 text-gray-200 bg-slate-100/100 bg-opacity-100 dark:bg-slate-700/30 rounded-2xl border border-slate-500/20 dark:border-slate-600/30 shadow-lg transform duration-300 cursor-pointer flex flex-col justify-between"
+            className="bg-black/.9 backdrop-blur-xl p-8 text-gray-200 custom-background bg-opacity-100 dark:bg-slate-700/30 rounded-2xl border border-slate-500/20 dark:border-slate-600/30 shadow-lg transform duration-300 cursor-pointer flex flex-col justify-between"
           >
             <header>
               <h3 className="pb-4 font-semibold text-lg">
