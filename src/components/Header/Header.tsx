@@ -7,7 +7,7 @@ function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     return (
         <div>
-          <header className="flex items-center justify-around p-8">
+          <header className="flex items-center justify-around sm:p-2 lg:p-8">
             <h1 className="header__title font-bold text-3xl text-white">T<span className="o">&#216;</span>m<span className="apostrophe">&#x2019;</span>s space</h1>
             <nav>
               <section className="MOBILE-MENU flex lg:hidden">
@@ -38,23 +38,23 @@ function Header() {
                       <line x1="6" y1="6" x2="18" y2="18" />
                     </svg>
                   </div>
-                  <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                    <li className="border-b border-gray-400 my-8 uppercase">
+                  <ul className="flex flex-col items-start justify-between min-h-[250px]">
+                    <li className=" my-8 uppercase">
                       <a href="#home">Home</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
+                    <li className=" my-8 uppercase">
                       <a href="#skills">Skills</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
+                    <li className=" my-8 uppercase">
                       <a href="#projects">Projects</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
+                    <li className="my-8 uppercase">
                       <a href="//medium.com/@thomasx2005">Blog</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
+                    <li className="my-8 uppercase">
                       <a href="#about">About</a>
                     </li>
-                    <li className="border-b border-gray-400 my-8 uppercase">
+                    <li className=" my-8 uppercase">
                       <a href="#contact">Contact</a>
                     </li>
                   </ul>
