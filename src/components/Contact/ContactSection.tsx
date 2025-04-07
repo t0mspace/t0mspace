@@ -27,9 +27,9 @@ function ContactSection() {
     <div id={"contact"} className="about-section max-w-3xl mx-auto">
       <h2 className="text-4xl mb-16 font-bold text-center">Contact</h2>
       <div className="text-left">
-        <p className="text-gray-700 dark:text-gray-200 mb-6 transition-colors duration-200">Feel free to reach out to me
+        <p className="text-gray-700 dark:text-gray-200 mb-6">Feel free to reach out to me
           via &nbsp;
-          <span className="external-link" onClick={openEmailClient}>email</span>
+          <span className="transition-colors duration-200 external-link" onClick={openEmailClient}>email</span>
         </p>
 
         <div className="flex  space-x-4">
