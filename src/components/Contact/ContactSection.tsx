@@ -1,22 +1,6 @@
-import github from '../../assets/images/skills/icons8-github-24.svg';
-import linkedin from '../../assets/images/skills/icons8-linkedin-24.svg';
+import {data} from '../Common/infos'
 
 function ContactSection() {
-  const data = {
-    'email': 'thomasbrenard@gmail.com',
-    'socialLinks': [
-      {
-        'name': 'LinkedIn',
-        'url': '//www.linkedin.com/in/thomas-b-a0642642',
-        'icon': linkedin
-      },
-      {
-        'name': 'GitHub',
-        'url': '//github.com/t0mspace',
-        'icon': github
-      }
-    ]
-  }
 
   const openEmailClient = () => {
     if (data.email) {
@@ -26,13 +10,11 @@ function ContactSection() {
   return (
     <div id={"contact"} className="about-section max-w-3xl mx-auto">
       <h2 className="text-4xl mb-16 font-bold text-center">Contact</h2>
-      <div className="text-left">
-        <p className="text-gray-700 dark:text-gray-200 mb-6">Feel free to reach out to me
+      <div className="text-left leading-3">
+        <p>Feel free to reach out to me
           via &nbsp;
           <span className="transition-colors duration-200 external-link" onClick={openEmailClient}>email</span>
         </p>
-
-        <div className="flex  space-x-4">
           <p> or connect on social media!</p>
           {data.socialLinks.map((item, index) => (
             <a key={index} href={item.url} target="_blank"
@@ -43,8 +25,6 @@ function ContactSection() {
             </a>
           ))
           }
-
-        </div>
 
       </div>
     </div>

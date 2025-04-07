@@ -1,7 +1,6 @@
 import './header.scss';
-import github from '../../assets/images/skills/icons8-github-24.svg';
-import linkedin from '../../assets/images/skills/icons8-linkedin-24.svg';
 import { useState } from 'react'
+import {data} from '../Common/infos'
 
 
 function Header() {
@@ -58,27 +57,17 @@ function Header() {
                     <li className="border-b border-gray-400 my-8 uppercase">
                       <a href="#contact">Contact</a>
                     </li>
-                    <li>
-                      <a
-                        href="https://github.com/your-username"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="nav-menu__external-link"
-                      >
-                        <img className="h-5 w-5" src={github} alt="GitHub Logo" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="//www.linkedin.com/in/thomas-b-a0642642"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="nav-menu__external-link"
-                      >
-                        <img className="h-5 w-5" src={linkedin} alt="Linkedin Logo" />
-                      </a>
-                    </li>
                   </ul>
+
+                  {data.socialLinks.map((item, index) => (
+                    <a key={index} href={item.url} target="_blank"
+                       rel="noopener noreferrer"
+                       className="cursor-pointer text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors
+        duration-300 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:focus:ring-primary-600 rounded-full">
+                      <img src={item.icon} alt={item.name} className="h-10 w-10" />
+                    </a>
+                  ))
+                  }
 
                 </div>
 
@@ -103,26 +92,15 @@ function Header() {
                 <li>
                   <a href="#contact">Contact</a>
                 </li>
-                <li>
-                  <a
-                    href="https://github.com/t0mspace"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="nav-menu__external-link"
-                  >
-                    <img className="h-5 w-5" src={github} alt="GitHub Logo" />
+                {data.socialLinks.map((item, index) => (
+                  <a key={index} href={item.url} target="_blank"
+                     rel="noopener noreferrer"
+                     className="cursor-pointer text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-400 transition-colors
+        duration-300 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:focus:ring-primary-600 rounded-full">
+                    <img src={item.icon} alt={item.name} className="h-10 w-10" />
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="//www.linkedin.com/in/thomas-b-a0642642"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="nav-menu__external-link"
-                  >
-                    <img className="h-5 w-5" src={linkedin} alt="Linkedin Logo" />
-                  </a>
-                </li>
+                ))
+                }
 
               </ul>
             </nav>
