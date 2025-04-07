@@ -35,10 +35,10 @@ function SkillsSection() {
     ];
 
     return (
-        <div id={"skills"} className="skills-section max-w-3xl mx-auto">
+        <div id={"skills"} className="justify-center skills-section max-w-3xl mx-auto">
           <h2 className="text-4xl mb-16 font-bold text-center">Skills</h2>
           <div className="flex">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto">
               {skills.map((skill, index) => (
                 <div className="bg-black/.9 backdrop-blur-xl">
                   <div key={index} className="skill-item dark:bg-slate-700/30 bg-opacity-100 p-4 rounded-lg">
