@@ -16,13 +16,13 @@ function HomeSection() {
         <div className="home__presentation z-10">
           <h2 className={styles["home__title"]}>👋  {data.greeting}</h2>
 
-          <h3 className={styles["home__title"]}>
+          <h2 className={styles["home__title"]}>
                   <span className="text-teal-500 dark:text-teal-400">
                       It's me </span>
             <span
               className="text-yellow-500 dark:text-yellow-400"
             >{data.name}</span>.<br />{data.title}
-          </h3>
+          </h2>
           <p className={styles["home__subtitle"]}>
             {data.subtitle}
           </p>

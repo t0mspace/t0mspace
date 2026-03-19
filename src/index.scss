@@ -1,33 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind typography;
 
-:root{
-  font-family: 'Space Mono', sans-serif;
-
+:root {
+  font-family: "Space Mono", monospace, sans-serif;
 }
-html{
+
+.title,
+h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+html {
   scroll-behavior: smooth;
 }
-html, body {
-
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-section{
+section {
   max-width: 80%;
 }
 
-p{
+h3,
+p,
+.text {
   font-size: 1.2rem;
   line-height: 1.8;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .external-link {
-  @apply cursor-pointer text-yellow-100 underline underline-offset-2 transition duration-300 ease-in-out hover:bg-yellow-100 hover:no-underline hover:text-gray-900 px-2 py-1
+  @apply cursor-pointer text-yellow-100 underline underline-offset-2 transition duration-300 ease-in-out hover:bg-yellow-100 hover:no-underline hover:text-gray-900 px-2 py-1;
 }
 
 /* Add this custom CSS for Firefox */
@@ -41,7 +55,6 @@ p{
   -webkit-scroll-snap-align: start; /* Firefox support */
 }
 
-
 .custom-background {
-  background-color: #1B2434;
+  background-color: #1b2434;
 }

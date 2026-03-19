@@ -23,6 +23,7 @@ function SkillsSection() {
     return (
         <div id={"skills"} className="justify-center skills-section max-w-3xl mx-auto">
           <h2 className="text-4xl mb-16 font-bold text-center">Skills</h2>
+          <h3 className="text-3xl mb-8 mt-16">IT</h3>
           <div className="flex">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto">
               {skills.map((skill, index) => (
@@ -35,6 +36,14 @@ function SkillsSection() {
               ))}
               </div>
           </div>
+          <h3 className="text-3xl mb-8 mt-16">Languages</h3>
+          <ul className="text">
+            <li>French: native</li>
+            <li>English: B2</li>
+            <li>Dutch: A2</li>
+          </ul>
+          <h3 className="text-3xl mb-8 mt-16">Soft skills</h3>
+          <p>Versatile, Sociable, empathic, creative and critical thinking</p>
         </div>
 
     )
