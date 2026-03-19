@@ -6,7 +6,7 @@ import styles from './home.module.scss';
 const data = {
     "greeting": "Hey there!",
     "name": "Thomas",
-    "title": "I'm a web developer",
+    "title": "I'm an IT",
     "subtitle": "& sometimes astronaut"
 }
 

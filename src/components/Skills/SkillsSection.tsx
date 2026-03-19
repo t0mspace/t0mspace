@@ -1,17 +1,10 @@
 import html from "../../assets/images/skills/icons8-html.svg";
 import css from "../../assets/images/skills/icons8-css3.svg";
 import javascript from "../../assets/images/skills/icons8-javascript.svg";
-import angular from "../../assets/images/skills/angular.svg";
 //import php from "../../assets/images/skills/icons8-php.svg";
 import php from "../../assets/images/skills/php.svg";
 import symfony from "../../assets/images/skills/icons8-symfony.svg";
 import linux from "../../assets/images/skills/linux.svg";
-import java from "../../assets/images/skills/icons8-java.svg";
-import docker from "../../assets/images/skills/icons8-docker.svg";
-import spring from "../../assets/images/skills/icons8-spring.svg";
-import react from "../../assets/images/skills/react.svg";
-import python from "../../assets/images/skills/python.svg";
-import gitlab from "../../assets/images/skills/icons8-gitlab.svg";
 import git from "../../assets/images/skills/icons8-git.svg";
 import sql from "../../assets/images/skills/icons8-sql.svg";
 
@@ -21,15 +14,8 @@ function SkillsSection() {
         { name: "CSS", src: css },
         { name: "JavaScript", src: javascript },
         { name: "PHP", src: php },
-        { name: "Java", src: java },
-        { name: "Angular", src: angular },
         { name: "Symfony", src: symfony },
         { name: "Linux", src: linux },
-        { name: "Docker", src: docker },
-        { name: "Spring", src: spring },
-        { name: "React", src: react },
-        { name: "Python", src: python },
-        { name: "Gitlab", src: gitlab },
         { name: "Git", src: git },
         { name: "SQL", src: sql },
     ];
