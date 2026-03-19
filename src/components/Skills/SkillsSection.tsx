@@ -37,13 +37,17 @@ function SkillsSection() {
               </div>
           </div>
           <h3 className="text-3xl mb-8 mt-16">Languages</h3>
+          <div className="bg-black/.9 backdrop-blur-xl p-8 text-gray-200 custom-background bg-opacity-100 dark:bg-slate-700/30 rounded-2xl transform duration-300 cursor-pointer flex flex-col justify-between">
           <ul className="text">
             <li>French: native</li>
             <li>English: B2</li>
             <li>Dutch: A2</li>
           </ul>
+          </div>
           <h3 className="text-3xl mb-8 mt-16">Soft skills</h3>
+          <div className="bg-black/.9 backdrop-blur-xl p-8 text-gray-200 custom-background bg-opacity-100 dark:bg-slate-700/30 rounded-2xl transform duration-300 cursor-pointer flex flex-col justify-between">
           <p>Versatile, Sociable, empathic, creative and critical thinking</p>
+          </div>
         </div>
 
     )

@@ -10,7 +10,7 @@ function ContactSection() {
   return (
     <div id={"contact"} className="about-section max-w-3xl mx-auto">
       <h2 className="text-4xl mb-16 font-bold text-center">Contact</h2>
-      <div className="text-left leading-3">
+      <div className="text-left leading-3 bg-black/.9 backdrop-blur-xl p-8 text-gray-200 custom-background bg-opacity-100 dark:bg-slate-700/30 rounded-2xl transform duration-300 cursor-pointer flex flex-col justify-between">
         <p>Feel free to reach out to me
           via &nbsp;
           <span className="transition-colors duration-200 external-link" onClick={openEmailClient}>email</span>
