@@ -1,7 +1,6 @@
 import styles from './skills.module.scss';
 //import php from "../../assets/images/skills/icons8-php.svg";
 import php from "../../assets/images/skills/php.svg";
-import symfony from "../../assets/images/skills/icons8-symfony.svg";
 import linux from "../../assets/images/skills/linux.svg";
 import git from "../../assets/images/skills/icons8-git.svg";
 import sql from "../../assets/images/skills/icons8-sql.svg";
