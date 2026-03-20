@@ -8,7 +8,7 @@ function Header() {
   return (
     <div>
       <header className="flex items-center justify-around sm:p-2 lg:p-8">
-        <h1 className="header__title font-bold text-3xl text-white">T<span className="o">&#216;</span>m<span className="apostrophe">&#x2019;</span>s space</h1>
+        <h1 className="header__title font-bold text-3xl text-white">Tom<span className="text-yellow-500">&#x2019;</span>s space</h1>
         <nav>
           <section className="MOBILE-MENU flex lg:hidden">
             <div

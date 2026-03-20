@@ -6,7 +6,7 @@ const VerticalSlider = ({ sections }) => {
       {sections.map((Section, index) => (
         <section
           key={index}
-          className={`scroll-snap-child mb-16 min-h-screen flex-${index}`}
+          className={`scroll-snap-child mb-40 min-h-screen flex-${index}`}
         >
           <Section />
         </section>

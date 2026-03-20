@@ -10,7 +10,7 @@ function ProjectsSection() {
 
   return (
     <div id="projects" className="projects-section max-w-3xl mx-auto">
-      <h2 className="text-4xl mb-16 font-bold text-center">Projects</h2>
+      <h2 className="text-4xl mb-12 font-bold text-center">Projects</h2>
       <div className="flex flex-wrap gap-6">
         {projectsData.map((project, index) => (
           <div
