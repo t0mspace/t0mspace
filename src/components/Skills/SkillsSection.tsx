@@ -37,7 +37,7 @@ function SkillsSection() {
       <h2 className="text-4xl mb-12 font-bold text-center">Skills</h2>
       <h3 className="text-3xl mb-8 mt-16">IT</h3>
       <div className="flex">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mx-auto">
           {skills.map((skill, index) => (
             <div key={index} className="bg-black/.9 backdrop-blur-xl">
               <div className="skill-item dark:bg-slate-700/30 bg-opacity-100 p-4 rounded-lg">
